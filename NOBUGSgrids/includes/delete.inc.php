@@ -9,7 +9,7 @@ if(isset($_GET['id'])){
   $sql = "DELETE FROM usuarios WHERE usuario='$id';";
   $result = mysqli_query($conn, $sql);
 
-  header("Location: ../listausuarios2.php?");
+  header("Location: ../listausuarios.php?");
 
   //$resultCheck = mysqli_num_rows($result);
   /*if($resultCheck>0){

@@ -30,6 +30,12 @@
       <li><h2>Lista de usuários cadastrados: </h2></li>
     </ul>
     <br><br>
+  <?php if(isset($_GET['id'])){ ?>
+    <div class="alert" style="text-align: center; font-weight: bold;">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';"><a href="listausuarios.php" style="text-decoration: none; color: white;">&times;</a></span>
+        Usuário excluído com sucesso!
+    </div>
+  <?php } ?>
     <?php
 
       $sql = "SELECT * FROM usuarios ORDER BY adm='0', nome;";
